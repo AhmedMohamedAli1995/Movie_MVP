@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
-class MovieInteractor {
+protocol MovieAPIProtocol{
+    func getMovies(page:Int,completion: @escaping ([Movie]?,Error?)->())
+}
+class MovieInteractor:MovieAPIProtocol {
     func getMovies(page:Int,completion: @escaping ([Movie]?,Error?)->()){
         APIService().makeRequestForModel(urlParameters: ["page":page] , body:nil ,  apiUrl: URLConstants.getPopularMovies) { (result:Result<APIResponse, NetworkError>) in
             switch result  {
