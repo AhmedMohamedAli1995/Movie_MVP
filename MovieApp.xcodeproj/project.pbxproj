@@ -20,6 +20,9 @@
 		F4F256862403FC3800A4729D /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F256852403FC3800A4729D /* MovieInteractor.swift */; };
 		F4F256882403FC4500A4729D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F256872403FC4500A4729D /* Movie.swift */; };
 		F4F2568A2403FC7800A4729D /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F256892403FC7800A4729D /* MovieAPI.swift */; };
+		F4F2568C2403FD3100A4729D /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2568B2403FD3100A4729D /* NetworkLayer.swift */; };
+		F4F2568E24041AA400A4729D /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2568D24041AA400A4729D /* MovieViewModel.swift */; };
+		F4F2569024041AEB00A4729D /* MovieViewController + MovieViewProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2568F24041AEB00A4729D /* MovieViewController + MovieViewProtocol .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F4F256852403FC3800A4729D /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
 		F4F256872403FC4500A4729D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F4F256892403FC7800A4729D /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		F4F2568B2403FD3100A4729D /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		F4F2568D24041AA400A4729D /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		F4F2568F24041AEB00A4729D /* MovieViewController + MovieViewProtocol .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MovieViewController + MovieViewProtocol .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 		F4F256782403D01800A4729D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F4F2568B2403FD3100A4729D /* NetworkLayer.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 		F4F256792403D03C00A4729D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F4F2568D24041AA400A4729D /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F256482403C23B00A4729D /* MovieViewController.swift */,
+				F4F2568F24041AEB00A4729D /* MovieViewController + MovieViewProtocol .swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,12 +388,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F256882403FC4500A4729D /* Movie.swift in Sources */,
+				F4F2568E24041AA400A4729D /* MovieViewModel.swift in Sources */,
 				F4F256492403C23B00A4729D /* MovieViewController.swift in Sources */,
 				F4F256862403FC3800A4729D /* MovieInteractor.swift in Sources */,
+				F4F2569024041AEB00A4729D /* MovieViewController + MovieViewProtocol .swift in Sources */,
 				F4F2568A2403FC7800A4729D /* MovieAPI.swift in Sources */,
 				F4F256802403D1BC00A4729D /* URLConstants.swift in Sources */,
 				F4F256822403FB7900A4729D /* Helper.swift in Sources */,
 				F4F256452403C23B00A4729D /* AppDelegate.swift in Sources */,
+				F4F2568C2403FD3100A4729D /* NetworkLayer.swift in Sources */,
 				F4F256472403C23B00A4729D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,16 @@ import UIKit
 
 class MovieViewController: UIViewController {
 
+     var movieViewModel:MovieViewModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
-            }
+        movieViewModel = MovieViewModel(movieViewProtocol: self)
+        movieViewModel.viewDidLoad()
+         // Do any additional setup after loading the view.
+    }
+
+
 
 
 }

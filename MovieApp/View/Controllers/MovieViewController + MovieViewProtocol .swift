@@ -7,13 +7,13 @@
 //
 
 import Foundation
-extension MoviesViewController:MovieViewProtocol{
+extension MovieViewController:MovieViewProtocol{
     func showIndicator() {
         print("showIndicator ")
     }
     
     func hideIndicator() {
-        print(hideIndicator)
+        print("hideIndicator")
     }
     
     func getListSuccessfully() {

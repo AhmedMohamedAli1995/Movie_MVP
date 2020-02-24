@@ -30,12 +30,12 @@ class MovieViewModel {
         self.movieViewProtocol = movieViewProtocol
     }
     func viewDidLoad(){
-        getMovies()
+        getMovies(page: 1)
     }
-    func getMovies(){
+    func getMovies(page:Int){
         //talk with interactor
         movieViewProtocol?.showIndicator()
-        interactor.getMovies {[weak self] (movies, error) in
+        interactor.getMovies(page: page) {[weak self] (movies, error) in
             guard let self = self else {return}
             self.movieViewProtocol?.hideIndicator()
             if let error = error {
@@ -44,6 +44,7 @@ class MovieViewModel {
             else{
                 guard let movies = movies else {return}
                 self.movies = movies
+                print("self.movies\(self.movies)")
                 self.movieViewProtocol?.getListSuccessfully()
             }
         }

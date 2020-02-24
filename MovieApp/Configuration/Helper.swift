@@ -10,9 +10,9 @@ import UIKit
 
 class Helper: NSObject {
     
-    class  func queryString(_ value: String, params: [String: String]) -> String? {
+    class  func queryString(_ value: String, params: [String: Any]) -> String? {
           var components = URLComponents(string: value)
-          components?.queryItems = params.map { element in URLQueryItem(name: element.key, value: element.value) }
+          components?.queryItems = params.map { element in URLQueryItem(name: element.key, value: "\(element.value)") }
 
           return components?.url?.absoluteString
       }
